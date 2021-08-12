@@ -1,0 +1,71 @@
+//variables
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+
+
+
+
+
+//functions
+
+//mixins
+
+@mixin flexmid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textstyle{
+    text-decoration: none;
+    list-style: none;
+}
+
+@mixin articlestyle {
+    width: 95%;
+    height: 15em;
+    margin: 0.8em 0em 0.8em 0em;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@mixin picsstyle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.restaurant{
+    display: flex;
+    flex-direction: column;
+        &__element{
+            @include articlestyle;
+            @include textstyle;
+
+    }
+}
+
+
+.pics-rest{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+        &__element{
+            @include picsstyle {
+                
+            }
+        }
+}
+
+
+.art-text{
+    width: 100%;
+    height: 40%;
+}
