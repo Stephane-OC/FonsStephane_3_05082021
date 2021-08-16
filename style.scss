@@ -4,10 +4,6 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
 
-
-
-
-
 //functions
 
 //mixins
@@ -37,13 +33,7 @@ $color-tertiary: #99E2D0;
     object-fit: cover;
 }
 
-
-
-
-
 //font family 
-
-
 @font-face{                                                    
     font-family: "Roboto-Regular"; 
     src: url("fonts/Roboto-Regular.ttf") format("truetype");
@@ -69,10 +59,7 @@ body{
     margin: 0px;
     padding: 0px;
     border: 0px;
-
 }
-
-
 
 //btn
 
@@ -87,7 +74,6 @@ body{
         font-size: 1.2em;
         color: white;
     }
-
 }
 
 //header
@@ -100,9 +86,7 @@ body{
         font-style: italic;
         font-weight: 900;
     }
-
 }
-
 
 //location
 
@@ -171,14 +155,8 @@ body{
             box-shadow: 0px 2px 13px grey;
             font-weight: bolder;
         }
-
     }
 }
-
-
-
-
-
 
 .restaurant{
     display: flex;
@@ -194,7 +172,6 @@ body{
         .link{
             text-decoration: none;
         }
-        
     }
 }
 
@@ -224,7 +201,6 @@ body{
 .restname2{
     color: black;
     margin-left: 1.2em;
-
 }
 
 //footer
@@ -237,7 +213,6 @@ footer{
         list-style: none;
         text-decoration: none;
         
-
         li{
             text-decoration: none;
             list-style-type: none;
@@ -249,7 +224,6 @@ footer{
             }
         }
     }
-
 }
 
 .h1footer{
@@ -259,3 +233,57 @@ footer{
     font-weight: 900;
     margin-left: 1.6em;
 }
+
+
+//Restaurant Header
+
+.rest_header{
+    display: flex;
+    height: 4em;
+    margin: 0em;
+    justify-content: flex-start;
+
+    &__backarrow{
+        margin-top: 0.5em;
+        font-size: 2em;
+        margin-left: 0.6em;
+        color: black;
+    }
+}
+
+.main-title{
+    font-family: 'shrikhand-regular';
+    margin-left: 2.5em;
+    margin-top: 0.5em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.picsrest{
+    width: 100%;
+    object-fit: cover;
+}
+
+//Selection Part
+
+.selection{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 0px 0px 5px 0px gray;
+
+    &__contein{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+.choice{
+    width: 95%;
+    box-shadow: 0px 0px 4px 0px;
+    border-radius: 20px;
+    margin-bottom: 0.5em;
+}
+

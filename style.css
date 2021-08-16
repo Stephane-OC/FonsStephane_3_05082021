@@ -177,4 +177,49 @@ footer ul li a {
   margin-left: 1.6em;
 }
 
+.rest_header {
+  display: flex;
+  height: 4em;
+  margin: 0em;
+  justify-content: flex-start;
+}
+.rest_header__backarrow {
+  margin-top: 0.5em;
+  font-size: 2em;
+  margin-left: 0.6em;
+  color: black;
+}
+
+.main-title {
+  font-family: "shrikhand-regular";
+  margin-left: 2.5em;
+  margin-top: 0.5em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.picsrest {
+  width: 100%;
+  object-fit: cover;
+}
+
+.selection {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0px 0px 5px 0px gray;
+}
+.selection__contein {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.choice {
+  width: 95%;
+  box-shadow: 0px 0px 4px 0px;
+  border-radius: 20px;
+  margin-bottom: 0.5em;
+}
+
 /*# sourceMappingURL=style.css.map */
