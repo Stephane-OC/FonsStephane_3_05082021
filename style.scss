@@ -56,7 +56,10 @@ $color-lightgrey: #F6F6F6;
 
 
 //body 
-
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 body{
     font-family: 'Roboto-Regular';
     margin: 0px;
@@ -119,7 +122,7 @@ body{
             background-color: #cfcfcf;
 
             border: none;
-            width: 80%;
+            width: 10em;
             height: 4em;
             margin-top: 0.3em;
             margin-left: 10px;
@@ -131,7 +134,7 @@ body{
 .marker{
     font-size: 1.5em;
     margin-left: 2em;
-    width: 20%;
+    width: 1em;
 }
 
 .loctext{
@@ -141,7 +144,7 @@ body{
 
     &__h1title{
         font-size: 1.5em;
-        margin: 1em 2em 2em 1em;
+        margin: 1em 3em 2em 3em;
         
         &__ptitle{
             font-size: 1.5em;
@@ -164,14 +167,13 @@ body{
             border: none;
             width: 20em;
             height: 4.8em;
-            border-radius: 30px;
+            border-radius: 25px;
             margin-bottom: 2em;
             font-size: 1em;
             box-shadow: 0px 2px 13px grey;
             background-color: $color-lightgrey;
             font-weight: bolder;
             position: relative;
-
         }
     }
 }
@@ -200,7 +202,6 @@ body{
     box-sizing: content-box;
     margin-left: -12px;
     margin-top: 26px;
-    
 }
 
 .selector i{
@@ -279,11 +280,14 @@ body{
 
 .restname{
     color:black;
-    margin-left: 1em;
+    margin-top: 1em;
+    margin-left: 0.8em;
+    font-size: 1.3em;
 }
 .restname2{
     color: black;
-    margin-left: 1.2em;
+    margin-left: 1.1em;
+    font-size: 1em;
 }
 
 //footer
@@ -404,23 +408,25 @@ footer{
 
 .choice{
     width: 95%;
-    height: 5em;
+    height: 4em;
     box-shadow: 0px 0px 4px 0px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-bottom: 0.5em;
     display: flex;
     background-color: white;
+    overflow: hidden;
 }
 
 .text{
-    width: 80%;
+    width: 65%;
     height: 100%;
     margin: 0em;
 
 
     &__h2{
-        font-size: 1.2em;
+        font-size: 1em;
         margin-top: 0.5em;
+        margin-bottom: 0.4em;
         padding-left: 0.8em;
         font-weight: bolder;
         white-space: nowrap;
@@ -431,7 +437,7 @@ footer{
 
 .text__p{
     font-size: 1em;
-    padding-left: 1em;
+    padding-left: 0.8em;
     margin-top: 0em;
     white-space: nowrap;
     overflow: hidden;
@@ -452,19 +458,394 @@ footer{
 .check{
     width: 15%;
     height: 100%;
-    font-size: 1.2em;
-    color: green;
+    font-size: 2em;
+    color: $color-tertiary;
+    background-color: $color-tertiary;
     display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check :hover{
+
+    display: inline;
+
+}
+
+.check i{
+    background-color: white;
+    border-radius: 50px;
+}
+.check i:hover{
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;
+    background-color: white;
 }
 
 .h2-restaurants{
     font-size: 1.2em;
     font-weight: lighter;
     margin-left: 1em;
-
 }
 
 .order{
     display: flex;
     justify-content: center;
+}
+
+//Responsive
+
+//Responsive vertical Tablet
+
+@media all and (max-width: 900px) and (min-width: 768px){
+
+//Restaurants Welcome
+.h1title{
+text-align: center;
+}
+
+.restaurant__element{
+    width: 60%;
+}
+
+.restname{
+    font-size: 1.4em;
+    margin-top: 0.8em;
+    margin-left: 0.9em;
+}
+
+.restname2{
+    font-size: 1.2em;
+    margin-top: 1.2em;
+}
+
+//Restaurants Page
+.choice{
+    width: 70%;
+}
+
+.h2-restaurants{
+    text-align: center;
+}
+
+.choice{
+    line-height: 1.2em;
+}
+.selection__title{
+    font-size: 1.3em;
+}
+
+.text{
+    width: 80%;
+}
+
+.text__h2{
+    font-size: 1.2em;
+}
+
+.text__p{
+    font-size: 1.1em;
+}
+
+.price{
+    font-size: 1.2em;
+}
+
+.check{
+    width: 15%;
+}
+
+//Footer Vertical tablet
+.h1footer{
+    font-weight: 1em;
+    text-align: center;
+    font-style: italic;
+}
+
+footer li{
+    text-align: center;
+    font-size: 1em;
+}
+}
+
+//Responsive Landscape Tablet
+
+@media all and (max-width: 1024px) and (min-width: 899px){
+//Restaurant Welcome
+.h1title{
+text-align: center;
+}
+
+.restaurant__element{
+    width: 50%;
+    height: 20em;
+    margin-bottom: 2em;
+}
+
+
+.restname{
+    margin-top: 0.5em;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.restname2{
+    font-size: 1.3em;
+    margin-left: 1.1em;
+}
+
+.art-text__element2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.1em;
+}    
+//Restaurant Page
+
+.choice{
+    width: 70%;
+}
+
+.h2-restaurants{
+    text-align: center;
+}
+
+.choice{
+    line-height: 1.2em;
+}
+.selection__title{
+    font-size: 1.3em;
+}
+
+.text{
+    width: 80%;
+}
+
+.text__h2{
+    font-size: 1.2em;
+}
+
+.text__p{
+    font-size: 1em;
+    margin-left: 0.2em;
+}
+
+.price{
+    font-size: 1.2em;
+}
+
+//Footer Tablette
+
+.h1footer{
+    font-weight: 1em;
+    text-align: center;
+    font-style: italic;
+}
+
+footer li{
+    text-align: center;
+    font-size: 1em;
+}
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1025px){
+//Restaurants Welcome
+.rest_header{
+    height: 8em;
+}
+
+.rest_header__backarrow{
+    font-size: 2em;
+    align-self: center;
+    margin-top: 0em;
+}
+
+.logo-main__h1{
+    font-size: 3em;
+}
+
+.h1title{
+    text-align: center;
+}
+.restaurant__element{
+    width: 40%;
+    height: 20em;
+    margin-bottom: 2em;
+}
+
+.art-text__element{
+    margin-top: 0em;
+}
+.restname{
+    margin-top: 0.4em;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.restname2{
+    font-size: 1.3em;
+    margin-left: 1.1em;
+}
+
+.art-text__element2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.1em;
+} 
+//Restaurants Page
+
+.choice{
+    height: 6em;
+    width: 60%;
+}
+
+.selection__title h1{
+    font-size: 1.2em;
+}
+
+.selection__title i{
+    font-size: 1.2em;
+}
+.h2-restaurants{
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.choice{
+    line-height: none;
+}
+.selection__title{
+    font-size: 1.8em;
+}
+
+.text__h2{
+    font-size: 1.4em;
+    margin-top: 0.8em;
+    margin-bottom: 0.3em;
+    margin-left: 0.3em;
+}
+
+.text__p{
+    font-size: 1.3em;
+    margin-left: 0.3em;
+}
+
+.price{
+    font-size: 1.4em;
+}
+
+.h1footer{
+    font-weight: 1.5em;
+    text-align: center;
+}
+
+//Footer Little Screen
+.h1footer{
+    font-style: italic;
+}
+
+footer ul{
+    text-align: center;
+}
+footer li{
+    font-size: 1.2em;
+}
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1281px){
+
+//Restaurants Welcome Desktop
+.rest_header{
+    height: 5em;
+}
+
+.rest_header__backarrow{
+    font-size: 1.6em;
+    align-self: center;
+    margin-top: 0em;
+}
+
+.logo-main__h1{
+    font-size: 2em;
+}
+
+.h1title{
+    text-align: center;
+}
+
+.restaurant__element{
+    width: 40%;
+    height: 20em;
+    margin-bottom: 2em;
+}
+
+.art-text__element{
+    margin-top: 0em;
+}
+.restname{
+    margin-top: 0.4em;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.restname2{
+    font-size: 1.3em;
+    margin-left: 1.1em;
+}
+//Restaurants Page Desktop
+.selection{
+    font-size: 0.6em;
+}
+.choice{
+    height: 6em;
+    width: 40%;
+    margin-bottom: 1em;
+}
+
+.h2-restaurants{
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.choice{
+    line-height: none;
+}
+.selection__title{
+    font-size: 1.4em;
+}
+
+.text{
+    width: 80%;
+}
+
+.text__h2{
+    font-size: 1.6em;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    margin-left: 0.3em;
+}
+
+.text__p{
+    font-size: 1.3em;
+    margin-left: 0.4em;
+}
+
+.price{
+    font-size: 1.3em;
+}
+
+//Footer Desktop
+.h1footer{
+    font-weight: 1em;
+    text-align: center;
+    font-style: italic;
+}
+
+footer li{
+    text-align: center;
+    font-size: 1em;
+}
 }
