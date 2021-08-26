@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("fonts/Shrikhand-Regular.ttf") format("truetype");
+}
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(50deg);
@@ -28,21 +44,35 @@
     display: none;
   }
 }
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+@keyframes opacity {
+  0% {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("fonts/Roboto-Bold.ttf") format("truetype");
+@-webkit-keyframes opacity {
+  0% {
+    -webkit-transform: translateY(80%);
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
 }
-@font-face {
-  font-family: "Roboto-Light";
-  src: url("Roboto-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Shrikhand";
-  src: url("fonts/Shrikhand-Regular.ttf") format("truetype");
+@-moz-keyframes opacity {
+  0% {
+    -moz-transform: translateY(80%);
+    -moz-opacity: 0;
+  }
+  100% {
+    -moz-transform: translateY(0);
+    -moz-opacity: 1;
+  }
 }
 .loading__container {
   display: flex;
@@ -109,6 +139,7 @@
 
 .fa-heart {
   cursor: pointer;
+  font-weight: lighter;
 }
 
 .fa-heart__content {
@@ -148,6 +179,42 @@
   bottom: 0.85em;
 }
 
+.btn {
+  border-radius: 40px;
+  width: 16em;
+  height: 4em;
+  border: none;
+  background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
+}
+.btn__text {
+  font-size: 1.2em;
+  color: white;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.underline {
+  border-bottom: solid 3px #99E2D0;
+  padding-bottom: 0.2em;
+}
+
 main {
   max-width: 1440px;
   margin: 0 auto;
@@ -165,23 +232,6 @@ body {
   margin-left: 0.8em;
   font-family: "roboto-bold";
   font-weight: 100;
-}
-
-.btn {
-  border-radius: 40px;
-  width: 16em;
-  height: 4em;
-  border: none;
-  background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
-}
-.btn__text {
-  font-size: 1.2em;
-  color: white;
-}
-
-.underline {
-  border-bottom: solid 3px #99E2D0;
-  padding-bottom: 0.2em;
 }
 
 .logo-main {
@@ -325,20 +375,6 @@ body {
   text-decoration: none;
 }
 
-.restaurant--move {
-  animation: translation_opacite 2s linear both;
-}
-
-@keyframes translation_opacite {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .eatery {
   width: 100%;
   display: flex;
@@ -374,6 +410,10 @@ body {
   border-radius: 3px;
   z-index: initial;
   box-sizing: border-box;
+}
+.pics-rest__new--hover:hover {
+  transform: rotate(-360deg);
+  transition: transform 500ms ease-in-out;
 }
 .pics-rest__new .new__p {
   text-align: center;
@@ -549,17 +589,20 @@ footer p {
   border-radius: 15px;
   margin-bottom: 1em;
   display: flex;
+  align-items: stretch;
   background-color: white;
   overflow: hidden;
-}
-.choice:hover + .check {
-  transition: all 0.5s linear;
+  cursor: pointer;
+  animation: opacity 2s linear both;
+  -webkit-animation: opacity 2s linear both;
+  -moz-animation: opacity 2s linear both;
 }
 
 .text {
-  width: 70%;
+  width: 80%;
   height: 100%;
   margin: 0em;
+  white-space: nowrap;
 }
 .text__h2 {
   font-size: 1em;
@@ -593,28 +636,34 @@ footer p {
 }
 
 .check {
-  width: 15%;
+  width: 20%;
   height: 100%;
+  max-width: 0;
   font-size: 1.6em;
   color: #99E2D0;
   background-color: #99E2D0;
   overflow: hidden;
-  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s linear;
 }
 
+.choice:hover .text {
+  width: 70%;
+}
+.choice:hover .check {
+  max-width: 15%;
+}
+.choice:hover .check.check i {
+  transform: rotateZ(-360deg);
+  transition: transform 500ms ease-in-out;
+}
+
 .check i {
   background-color: white;
   border-radius: 50px;
-}
-
-.check i:hover {
-  transform: rotate(-360deg);
-  transition: transform 500ms ease-in-out;
-  background-color: white;
+  transition: all 0.5s linear;
 }
 
 .h2-restaurants {
