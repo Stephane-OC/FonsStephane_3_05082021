@@ -1,0 +1,27 @@
+//////////variables
+
+//Color Primary 
+$color-primary: #9356DC;
+
+//Color Secondary
+$color-secondary: #FF79DA;
+
+//Color Tertiary
+$color-tertiary: #99E2D0;
+
+//Color Primary Lighter
+$color-primary-lighter: lighten($color-primary, 33%);
+
+//Color Primary Darker
+$color-tertiary-darken: darken($color-tertiary,40%);
+
+//Color Lightgrey
+$color-lightgrey: #F6F6F6;
+
+//Color Lightgrey Darker
+$color-grey-darken: darken($color-lightgrey, 8%);
+
+//Color Grey B8
+$color-shadowgrey: #b8b8b8;
+
+//////////End of Variables

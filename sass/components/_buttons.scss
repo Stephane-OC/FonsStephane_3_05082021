@@ -1,0 +1,36 @@
+//////////btn
+
+.btn{
+    border-radius: 40px;
+    width: 16em;
+    height: 4em;
+    border: none;
+    background: linear-gradient(to top left, $color-primary, 55%, $color-secondary);
+
+    &__text{
+        font-size: 1.2em;
+        color: white;
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+////////// End of Buttons

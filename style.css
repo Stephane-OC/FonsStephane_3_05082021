@@ -175,8 +175,9 @@
   transform: scale(0);
   transform-origin: bottom;
   position: relative;
-  left: 20%;
-  bottom: 0.85em;
+  left: 17%;
+  bottom: 0.9em;
+  font-size: 0.9em;
 }
 
 .btn {
@@ -677,6 +678,21 @@ footer p {
   justify-content: center;
 }
 
+@media all and (max-width: 767px) and (min-width: 415px) {
+  .fa-heart_full {
+    left: 14.5%;
+    bottom: 0.9em;
+  }
+
+  .restaurant__element {
+    width: 24em;
+    height: 18em;
+  }
+
+  .pics-rest__new {
+    top: -12em;
+  }
+}
 @media all and (max-width: 1023px) and (min-width: 768px) {
   .h1title {
     text-align: center;
@@ -698,8 +714,8 @@ footer p {
   }
 
   .fa-heart_full {
-    left: 15%;
-    bottom: 0.85em;
+    left: 12%;
+    bottom: 0.9em;
   }
 
   .choice {
@@ -787,8 +803,8 @@ footer p {
   }
 
   .fa-heart_full {
-    left: 15%;
-    bottom: 0.85em;
+    left: 13%;
+    bottom: 0.9em;
   }
 
   .choice {
@@ -887,8 +903,8 @@ footer p {
   }
 
   .fa-heart_full {
-    left: 15%;
-    bottom: 0.85em;
+    left: 12%;
+    bottom: 0.9em;
   }
 
   .pics-rest__new {
@@ -1014,8 +1030,8 @@ footer p {
   }
 
   .fa-heart_full {
-    left: 15%;
-    bottom: 0.85em;
+    left: 12%;
+    bottom: 0.9em;
   }
 
   .selection {

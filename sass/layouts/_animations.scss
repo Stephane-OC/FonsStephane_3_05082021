@@ -1,0 +1,46 @@
+//////////Heart and Heart Animation
+.fa-heart {
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.fa-heart__content {
+    font-size: 1.9em;
+}
+
+.fa-heart__content_empty {
+    position: relative;
+    right: 20px;
+    bottom: 27px;
+}
+
+.fa-heart__box {
+    position: relative;
+    left: 17px;
+}
+
+.fa-heart__box:hover>.fa-heart_full {
+    opacity: 1;
+    transform: scale(1);
+//One heart other the another one    
+    z-index: 2;
+}
+
+.fa-heart_full {
+    color: $color-secondary;
+    background: $color-secondary;
+    background: linear-gradient(63deg, $color-secondary 0%, $color-primary 100%);
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 1000ms;
+    transform: scale(0);
+    transform-origin: bottom;
+    position: relative;
+    left: 17%;
+    bottom: 0.90em;
+    font-size: 0.9em;
+}
+
+////////// End Heart & Heart Animation
