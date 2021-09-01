@@ -13,10 +13,6 @@
         color: black;
     }
 }
-.rest_header i{
-    font-size: 0.8em;
-    margin-right: -1em;
-}
 
 .logo{
     display: flex;
@@ -72,19 +68,19 @@
 .selection__title{
     display: flex;
     justify-content: space-between;
-    margin: 0em 1.5em 0em 1.5em;
+    margin: 0em 0em 0em 1em;
     font-weight: 100;
+    font-size: 1em;
 }    
 
 .selection__title h2{
-    font-size: 1.5em;
+
     font-family: 'Shrikhand';
-    font-size: 1.6em;
 }
 
-.selection__title i{
-    font-size: 1.5em;
-    margin-top: 0.9em;
+.selection__wrap{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .choice{
@@ -137,6 +133,7 @@
     font-size: 1em;
     width: 20%;
     height: 100%;
+    margin-top: 0.3em;
     font-weight: bolder;
     vertical-align: text-bottom;
 }
@@ -157,15 +154,15 @@
 
 .choice:hover{
     .text{
-        width: 70%;
+        width: 65%;
     }
 
     .check{
-        max-width: 15%;
+        max-width: 20%;
 
         &.check i {
             transform: rotateZ(-360deg);
-            transition: transform 500ms ease-in-out;
+            transition: transform 1000ms ease-in-out;
 
         }
     }
@@ -174,14 +171,15 @@
 .check i{
     background-color: white;
     border-radius: 50px;
-
-    transition: all 0.5s linear;
+    font-size: 0.6em;
+    padding: 0.1em;
 }
 
 .h2-restaurants{
     font-size: 1.2em;
     font-weight: lighter;
     margin-left: 1em;
+    align-self: flex-start;
 }
 
 .order{

@@ -12,6 +12,12 @@ $color-tertiary: #99E2D0;
 //Color Primary Lighter
 $color-primary-lighter: lighten($color-primary, 33%);
 
+//Color Primary Lighter buttons
+$color-primary-buttons: lighten($color-primary, 5%);
+
+//Color secondary Lighter
+$color-secondary-buttons: lighten($color-secondary, 5%);
+
 //Color Primary Darker
 $color-tertiary-darken: darken($color-tertiary,40%);
 

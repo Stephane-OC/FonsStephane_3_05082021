@@ -4,10 +4,7 @@
 
 @media all and (max-width: 767px) and (min-width: 415px){
 
-    .fa-heart_full {
-        left: 14.5%;
-        bottom: 0.90em;
-    }
+
 
     .restaurant__element{
         width: 24em;
@@ -17,6 +14,9 @@
     .pics-rest__new{
         top: -12em;
     }
+
+
+
 
 }
 @media all and (max-width: 1023px) and (min-width: 768px){
@@ -40,12 +40,12 @@
         font-size: 1.1em;
         margin-top: 1.2em;
     }
-    
-    .fa-heart_full {
-    
-        left: 12%;
-        bottom: 0.90em;
+
+    .art-text__element2{
+        margin-right: 0em;
     }
+    
+
     
     //Restaurants Page
     .choice{
@@ -82,6 +82,11 @@
     .check{
         width: 15%;
     }
+
+    .fa-heart_full--margin2{
+    left: 23%;
+    bottom: 0.70em;
+}
     
     //Footer Vertical tablet
     .h1footer{
@@ -130,22 +135,27 @@
         display: flex;
         justify-content: center;
         margin-top: 0.8em;
+        margin-left: -2.5em;
     }    
     
     .pics-rest__new{
         top: -13.6em;
     
     }
-    
-    .fa-heart_full {
-        left: 13%;
-        bottom: 0.90em;
+
+
+    .fa-heart_full--margin2{
+        left: 25%;
+        bottom: 0.7em;
     }
     
+    .art-text__element2{
+        margin-right: 0.5em;
+    }
     //Restaurant Page
     
     .choice{
-        width: 70%;
+        width: 40em;
     }
     
     .h2-restaurants{
@@ -174,8 +184,17 @@
     
     .price{
         font-size: 1.2em;
+        margin-top: 0.5em;
+        width: 25%;
+    }
+
+    .check{
+        width: 13%;
     }
     
+    .fa-heart__box{
+        left: 2em;
+    }
     //Footer Tablette
     
     .h1footer{
@@ -224,6 +243,7 @@
     .art-text__element{
         margin-top: 0em;
     }
+
     .restname{
         margin-top: 0.4em;
         margin-left: 1em;
@@ -240,37 +260,35 @@
         display: flex;
         justify-content: center;
         margin-top: 0.8em;
+
     } 
     
-    .fa-heart_full {
-    
-        left: 12%;
-        bottom: 0.90em;
-    }
-    
     .pics-rest__new{
-    
         top: -13.6em;
-    
     }
+
     
     //Restaurants Page
-    
+
+    .selection__wrap{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selection__contein{
+        width: 33%;
+        justify-content: space-around;
+        margin-right: 6em;
+    }
     .choice{
-        height: 6em;
-        width: 60%;
+        height: 4.5em;
+        width: 100%;
     }
     
-    .selection__title h1{
-        font-size: 1.2em;
-    }
-    
-    .selection__title i{
-        font-size: 1.2em;
-    }
+
     .h2-restaurants{
-        text-align: center;
-        font-size: 1.6em;
+        font-size: 1.2em;
+        align-self: center;
     }
     
     
@@ -278,23 +296,29 @@
         line-height: none;
     }
     .selection__title{
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
     
+    .fa-heart_full--margin2{
+        left: 24%;
+        bottom: 0.72em;
+    }
+
     .text__h2{
-        font-size: 1.4em;
-        margin-top: 0.8em;
+        font-size: 1.2em;
+        margin-top: 0.5em;
         margin-bottom: 0.3em;
         margin-left: 0.3em;
     }
     
     .text__p{
-        font-size: 1.3em;
+        font-size: 1.1em;
         margin-left: 0.3em;
     }
     
     .price{
-        font-size: 1.4em;
+        font-size: 1.2em;
+        margin-top: 0.4em;
     }
     
     .h1footer{
@@ -371,23 +395,37 @@
         width: 20%;
         font-size: 2em;
         margin-top: 0.8em;
-        margin-left: 0.8em;
+        margin-left: -3.2em;
+        margin-right: 0em;
         color: black;
     }
-    
-    .fa-heart_full {
-    
-        left: 12%;
-        bottom: 0.90em;
+
+    .fa-heart__box{
+        margin-right: 0em;
     }
+    
+    .check{
+        width: 20%;
+    }
+
     //Restaurants Page Desktop
     .selection{
         font-size: 0.6em;
     }
+
+    .selection__wrap{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selection__contein{
+        width: 33%;
+        justify-content: space-around;
+        margin-right: 6em;
+    }
     .choice{
         height: 6em;
-        width: 40%;
-        margin-bottom: 1em;
+        width: 48em;
     }
     
     .h2-restaurants{
@@ -396,11 +434,23 @@
     }
     
     .selection__title{
-        font-size: 1.4em;
+        font-size: 2em;
     }
     
+    .fa-heart_full--margin2{
+        left: 22%;
+        bottom: 0.78em;
+    }
+    
+    .fa-heart__box{
+        left: 3em;
+    }
     .text{
         width: 80%;
+    }
+
+    .h2-restaurants{
+        align-self: center;
     }
     
     .text__h2{
@@ -417,6 +467,12 @@
     
     .price{
         font-size: 1.3em;
+        width: 22%;
+    }
+
+    .check i{
+        font-size: 0.9em;
+        padding: 0.16em;
     }
     
     //Footer Desktop
