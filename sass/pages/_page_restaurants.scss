@@ -162,8 +162,7 @@
 
         &.check i {
             transform: rotateZ(-360deg);
-            transition: transform 1000ms ease-in-out;
-
+            transition: transform 500ms ease-in-out;
         }
     }
 }

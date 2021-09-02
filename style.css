@@ -21,21 +21,21 @@
     transform: rotate(50deg);
   }
   to {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes spin {
   from {
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes cssAnimation2 {
@@ -667,7 +667,7 @@ footer p {
 }
 .choice:hover .check.check i {
   transform: rotateZ(-360deg);
-  transition: transform 1000ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 
 .check i {
