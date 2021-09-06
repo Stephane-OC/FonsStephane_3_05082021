@@ -90,7 +90,6 @@
     
     //Footer Vertical tablet
     .h1footer{
-        font-weight: 1em;
         text-align: center;
         font-style: italic;
     }
@@ -198,7 +197,6 @@
     //Footer Tablette
     
     .h1footer{
-        font-weight: 1em;
         text-align: center;
         font-style: italic;
     }
@@ -227,6 +225,12 @@
     
     .h1title{
         text-align: center;
+    }
+
+    .conteiner__element{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     
     .eatery{
@@ -322,7 +326,6 @@
     }
     
     .h1footer{
-        font-weight: 1.5em;
         text-align: center;
     }
     
@@ -365,6 +368,12 @@
         height: 20em;
         margin-bottom: 2em;
         margin-right: 1.2em;
+    }
+
+    .conteiner__element{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     
     .pics-rest__new{
@@ -477,7 +486,6 @@
     
     //Footer Desktop
     .h1footer{
-        font-weight: 1em;
         text-align: center;
         font-style: italic;
     }

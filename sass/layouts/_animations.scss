@@ -33,8 +33,7 @@
 }
 
 .fa-heart_full {
-    color: $color-secondary;
-    background: $color-secondary;
+
     background: linear-gradient(63deg, $color-secondary 0%, $color-primary 100%);
     background-clip: border-box;
     -webkit-text-fill-color: transparent;

@@ -169,8 +169,6 @@
 }
 
 .fa-heart_full {
-  color: #FF79DA;
-  background: #FF79DA;
   background: linear-gradient(63deg, #FF79DA 0%, #9356DC 100%);
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
@@ -650,7 +648,6 @@ footer p {
   height: 100%;
   max-width: 0;
   font-size: 1.6em;
-  color: #99E2D0;
   background-color: #99E2D0;
   overflow: hidden;
   display: flex;
@@ -672,6 +669,7 @@ footer p {
 
 .check i {
   background-color: white;
+  color: #99E2D0;
   border-radius: 50px;
   font-size: 0.6em;
   padding: 0.1em;
@@ -765,7 +763,6 @@ footer p {
   }
 
   .h1footer {
-    font-weight: 1em;
     text-align: center;
     font-style: italic;
   }
@@ -866,7 +863,6 @@ footer p {
   }
 
   .h1footer {
-    font-weight: 1em;
     text-align: center;
     font-style: italic;
   }
@@ -893,6 +889,12 @@ footer p {
 
   .h1title {
     text-align: center;
+  }
+
+  .conteiner__element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .eatery {
@@ -983,7 +985,6 @@ footer p {
   }
 
   .h1footer {
-    font-weight: 1.5em;
     text-align: center;
   }
 
@@ -1023,6 +1024,12 @@ footer p {
     height: 20em;
     margin-bottom: 2em;
     margin-right: 1.2em;
+  }
+
+  .conteiner__element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .pics-rest__new {
@@ -1136,7 +1143,6 @@ footer p {
   }
 
   .h1footer {
-    font-weight: 1em;
     text-align: center;
     font-style: italic;
   }
