@@ -727,6 +727,7 @@ footer p {
 
   .h2-restaurants {
     text-align: center;
+    align-self: center;
   }
 
   .choice {
@@ -811,7 +812,7 @@ footer p {
   }
 
   .fa-heart_full--margin2 {
-    left: 25%;
+    left: 24%;
     bottom: 0.7em;
   }
 
@@ -825,6 +826,7 @@ footer p {
 
   .h2-restaurants {
     text-align: center;
+    align-self: center;
   }
 
   .choice {
