@@ -956,10 +956,6 @@ footer p {
     align-self: center;
   }
 
-  .choice {
-    line-height: none;
-  }
-
   .selection__title {
     font-size: 1.3em;
   }
